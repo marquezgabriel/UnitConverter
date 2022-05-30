@@ -67,12 +67,12 @@ struct ContentView: View {
                     ForEach(units, id: \.self) {
                         Text($0)
                     }
-                }.pickerStyle(.automatic)
+                }.pickerStyle(.segmented)
                 Picker("Convert to" ,selection: $outputUnit) {
                     ForEach(units, id: \.self) {
                         Text($0)
                     }
-                } .pickerStyle(.automatic)
+                } .pickerStyle(.segmented)
                 
                 Section {
                     Text(result)
