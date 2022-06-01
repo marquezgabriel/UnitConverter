@@ -3,7 +3,7 @@
 //  UnitConverter
 //
 //  Created by Gabriel Marquez on 2022-05-28.
-//  Updated by Gabriel Marquez on 2022-05-31.
+//  Updated by Gabriel Marquez on 2022-06-01.
 //
 
 import SwiftUI
@@ -36,9 +36,6 @@ struct ContentView: View {
     }
     
     let conversions = ["Distance", "Mass", "Temperature", "Time"]
-    
-
-    
     
     @FocusState private var inputIsFocused: Bool
 
@@ -102,6 +99,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.dark)
-            .previewDevice("iPhone 11 Pro Max")
+            .previewDevice("iPhone 11 Pro")
     }
 }
